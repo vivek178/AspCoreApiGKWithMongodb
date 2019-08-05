@@ -1,0 +1,265 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKWebApi\\GKWebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\CGI\\.nuget\\packages\\",
+        "outputPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CGI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.8.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\CGI\\.nuget\\packages\\",
+        "outputPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CGI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.8.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\GKBusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\GKBusinessLayer.csproj",
+        "projectName": "GKBusinessLayer",
+        "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\GKBusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\CGI\\.nuget\\packages\\",
+        "outputPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CGI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKWebApi\\GKWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKWebApi\\GKWebApi.csproj",
+        "projectName": "GKWebApi",
+        "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKWebApi\\GKWebApi.csproj",
+        "packagesPath": "C:\\Users\\CGI\\.nuget\\packages\\",
+        "outputPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKWebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CGI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\Entities\\Entities.csproj"
+              },
+              "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\GKBusinessLayer.csproj": {
+                "projectPath": "C:\\EntityFramworkAPI\\GoogleKeepsWithMongoDB\\GoogleKeepProject\\GKBusinessLayer\\GKBusinessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.8.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
