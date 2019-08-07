@@ -8,6 +8,11 @@ namespace Entities
     {
         // defining properties for Notes.
 
+        public Notes()
+        {
+            labels = new List<Label>();
+        }
+
         [BsonId]
         public int NoteID { get; set; }
         

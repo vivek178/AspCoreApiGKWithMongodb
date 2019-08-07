@@ -8,6 +8,7 @@ namespace DataAccessLayer
     /// </summary>
     public interface IKeepNotes
     {
+        // This methods is for notes.
         void CreateNote(Notes notes);
 
         bool RemoveNote(int NoteID);
@@ -17,5 +18,15 @@ namespace DataAccessLayer
         Notes GetNotesByID(int NoteID);
 
         List<Notes> GetAllNotes();
+
+
+        // this  method is for labels.
+        ICollection<Label> GetLabels(int NoteID);
+
+        void CreateLabel(int NoteID, Label label);
+
+        void UpdateLabel(int LabelID, Label label);
+
+        void RemoveLabelByLabelIDandNoteID(int NoteID, int LabelID);
     }
 }

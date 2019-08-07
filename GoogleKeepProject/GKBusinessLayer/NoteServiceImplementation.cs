@@ -18,12 +18,17 @@ namespace GKBusinessLayer
         }
 
 
+        // Implementation of Notes Methods Start From here. 
         // create a Note in service.
         public void CreateNote(Notes notes)
         {
             var result = keepNotes.GetNotesByID(notes.NoteID);
             if (result == null)
             {
+                if (notes.labels == null)
+                {
+                    notes.labels = new List<Label>();
+                }
                 keepNotes.CreateNote(notes);
             }
             else
@@ -84,6 +89,31 @@ namespace GKBusinessLayer
                 result.Text = notes.Text;
                 return keepNotes.UpdateNote(NoteID, result);
             }
+        }
+
+
+
+
+        // Labels Implementaion Methods. 
+
+        public ICollection<Label> GetLabels(int NoteID)
+        {
+            return keepNotes.GetLabels(NoteID);
+        }
+
+        public void CreateLabel(int NoteID, Label label)
+        {
+            keepNotes.CreateLabel(NoteID, label);
+        }
+
+        public void UpdateLabel(int NoteID, Label label)
+        {
+            keepNotes.UpdateLabel(NoteID, label);
+        }
+
+        public void RemoveLabel(int NoteID, int LabelID)
+        {
+            keepNotes.RemoveLabelByLabelIDandNoteID(NoteID, LabelID);
         }
     }
 }

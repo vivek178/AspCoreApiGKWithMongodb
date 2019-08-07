@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using GKBusinessLayer;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace GKWebApi
 {
@@ -22,13 +23,14 @@ namespace GKWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<NotesDBConText>();
-
-
             services.AddScoped<IKeepNotes, NotesImplemention>();
-            services.AddScoped<IKeepLabel, LabelImplementation>();
-
-            services.AddScoped<IKeepLabelService, LabelServiceImplementation>();
             services.AddScoped<IKeepNoteService, NoteServiceImplementation>();
+
+            // Adding Swagger.
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -44,6 +46,17 @@ namespace GKWebApi
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            // using Swagger.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseHttpsRedirection();
             app.UseMvc();

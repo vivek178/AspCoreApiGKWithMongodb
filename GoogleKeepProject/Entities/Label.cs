@@ -15,10 +15,6 @@ namespace Entities
         [BsonElement("description")]
         public string Description { get; set; }
 
-        [BsonElement("noteid")]
-        public int NoteID { get; set; }
-
-
         // for one to many relationship.
         //[JsonIgnore]
     }
